@@ -1,0 +1,129 @@
+{
+  "as_of": "2026-10-08T12:00:00+00:00",
+  "findings": [
+    {
+      "Id": "example-2",
+      "ProductArn": "arn:aws:securityhub:us-east-1::product/aws/securityhub",
+      "exception_state": "none",
+      "exploit_available_reported": true,
+      "finding_key": "0c86dbacfd672a49",
+      "illustrative_due_at": "2026-10-01T00:00:00+00:00",
+      "last_observed_at": "2026-10-07T00:00:00+00:00",
+      "overdue": true,
+      "owner": null,
+      "priority": "urgent_review",
+      "provider_updated_at": "2026-10-07T00:00:00+00:00",
+      "quality_flags": [
+        "owner_missing"
+      ],
+      "record_state": "ACTIVE",
+      "resources": [
+        "synthetic-sg"
+      ],
+      "severity": "MEDIUM",
+      "source_indices": [
+        2
+      ],
+      "title": "Synthetic dependency with reported exploit",
+      "vulnerability_ids": [
+        "CVE-2099-0001"
+      ],
+      "workflow_status": "NEW"
+    },
+    {
+      "Id": "example-1",
+      "ProductArn": "arn:aws:securityhub:us-east-1::product/aws/securityhub",
+      "exception_state": "none",
+      "exploit_available_reported": false,
+      "finding_key": "7e537ae54936e6c9",
+      "illustrative_due_at": "2026-09-08T00:00:00+00:00",
+      "last_observed_at": "2026-10-07T00:00:00+00:00",
+      "overdue": true,
+      "owner": "demo-platform",
+      "priority": "urgent_review",
+      "provider_updated_at": "2026-10-07T00:00:00+00:00",
+      "quality_flags": [],
+      "record_state": "ACTIVE",
+      "resources": [
+        "synthetic-sg"
+      ],
+      "severity": "HIGH",
+      "source_indices": [
+        0,
+        1
+      ],
+      "title": "Synthetic SSH exposure",
+      "vulnerability_ids": [],
+      "workflow_status": "NEW"
+    },
+    {
+      "Id": "example-3",
+      "ProductArn": "arn:aws:securityhub:us-east-1::product/aws/securityhub",
+      "exception_state": "expired",
+      "exploit_available_reported": false,
+      "finding_key": "b1fcbce5a6009044",
+      "illustrative_due_at": "2026-09-08T00:00:00+00:00",
+      "last_observed_at": "2026-09-01T00:00:00+00:00",
+      "overdue": true,
+      "owner": "demo-runtime",
+      "priority": "urgent_review",
+      "provider_updated_at": "2026-10-07T00:00:00+00:00",
+      "quality_flags": [
+        "exception_expired",
+        "stale_observation",
+        "suppression_without_active_exception"
+      ],
+      "record_state": "ACTIVE",
+      "resources": [
+        "synthetic-sg"
+      ],
+      "severity": "HIGH",
+      "source_indices": [
+        3
+      ],
+      "title": "Synthetic suppressed container finding",
+      "vulnerability_ids": [],
+      "workflow_status": "SUPPRESSED"
+    },
+    {
+      "Id": "example-4",
+      "ProductArn": "arn:aws:securityhub:us-east-1::product/aws/securityhub",
+      "exception_state": "none",
+      "exploit_available_reported": false,
+      "finding_key": "9175c822ac3db333",
+      "illustrative_due_at": "2026-09-08T00:00:00+00:00",
+      "last_observed_at": "2026-10-07T00:00:00+00:00",
+      "overdue": false,
+      "owner": null,
+      "priority": "review",
+      "provider_updated_at": "2026-10-07T00:00:00+00:00",
+      "quality_flags": [
+        "owner_missing"
+      ],
+      "record_state": "ACTIVE",
+      "resources": [
+        "synthetic-sg"
+      ],
+      "severity": "HIGH",
+      "source_indices": [
+        4
+      ],
+      "title": "Synthetic source marked resolved",
+      "vulnerability_ids": [],
+      "workflow_status": "RESOLVED"
+    }
+  ],
+  "invalid_records": [],
+  "scope": "offline snapshot; illustrative triage, no remediation verification",
+  "summary": {
+    "duplicate_records": 1,
+    "input_records": 5,
+    "invalid_records": 0,
+    "priorities": {
+      "review": 1,
+      "urgent_review": 3
+    },
+    "unique_findings": 4
+  },
+  "unused_annotations": []
+}

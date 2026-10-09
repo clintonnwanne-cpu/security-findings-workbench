@@ -1,0 +1,17 @@
+[
+  {
+    "ProductArn": "arn:aws:securityhub:us-east-1::product/aws/securityhub",
+    "Id": "example-1",
+    "owner": "demo-platform"
+  },
+  {
+    "ProductArn": "arn:aws:securityhub:us-east-1::product/aws/securityhub",
+    "Id": "example-3",
+    "owner": "demo-runtime",
+    "exception": {
+      "reason": "Synthetic migration deadline",
+      "ticket": "DEMO-42",
+      "expires_at": "2026-10-01T00:00:00Z"
+    }
+  }
+]
